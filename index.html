@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lena — Portfolio</title>
+    <meta
+      name="description"
+      content="Personal portfolio for Lena Alqaissom, a Software Engineering student at KFUPM, featuring skills, projects, and contact information."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#mainContent">Skip to main content</a>
+
+    <div class="greeting-bar" id="greetingBar">
+      <div class="container">
+        <div id="greetingForm">
+          <label for="userName" class="sr-only">Enter your name</label>
+          <input
+            type="text"
+            id="userName"
+            placeholder="Enter your name"
+            autocomplete="name"
+            maxlength="50"
+          />
+          <button type="button" id="saveName">Save</button>
+          <button type="button" id="clearName" class="btn-outline">Clear</button>
+        </div>
+
+        <div id="greetingMessage" hidden aria-live="polite">
+          <div class="greeting-message-content">
+            <p>
+              <span id="greetingPrefix">Welcome</span>,
+              <span id="displayName"></span> 👋
+            </p>
+
+            <div
+              class="weather-display"
+              id="weatherDisplay"
+              aria-live="polite"
+              aria-label="Weather information"
+            >
+              <div class="weather-loading" id="weatherLoading">
+                Loading weather...
+              </div>
+
+              <div class="weather-content" id="weatherContent" hidden>
+                <span class="weather-icon" aria-hidden="true">🌤️</span>
+                <span class="weather-meta">
+                  <span id="weatherTemp"></span>
+                  <span id="weatherDesc"></span>
+                </span>
+              </div>
+
+              <div class="weather-error" id="weatherError" hidden>
+                Weather is currently unavailable
+              </div>
+            </div>
+          </div>
+
+          <button type="button" id="editName" class="btn-outline">Edit</button>
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header" id="siteHeader">
+      <div class="container header-inner">
+        <a class="brand" href="#top">Lena</a>
+
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="mainContent">
+      <section id="top" class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <p class="hero-kicker">Personal Portfolio</p>
+            <h1>Lena Alqaissom</h1>
+            <p class="hero-subtitle">Software Engineering Student</p>
+            <p class="hero-description">
+              I build clean, user-friendly digital experiences and enjoy learning
+              through real projects in software engineering, databases, and AI.
+            </p>
+
+            <div class="hero-actions">
+              <a class="hero-link" href="#projects">View Projects</a>
+              <a
+                class="hero-link hero-link-secondary"
+                href="https://www.linkedin.com/in/lena-alqaissom-560063275?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit Lena Alqaissom LinkedIn profile"
+              >
+                View LinkedIn
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-image">
+            <img
+              src="assets/images/profile-img.jpg"
+              alt="Portrait of Lena Alqaissom"
+              loading="eager"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>About</h2>
+          </div>
+
+          <p class="about-text">
+            I am a Software Engineering student at KFUPM. I am passionate about
+            programming and interested in cybersecurity, project management, and
+            building practical applications that solve real problems.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Skills</h2>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill">Java</div>
+            <div class="skill">Python</div>
+            <div class="skill">SQL</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Git</div>
+            <div class="skill">JavaFX</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Projects</h2>
+          </div>
+
+          <div class="projects-controls">
+            <label for="projectFilter">Filter projects</label>
+            <select id="projectFilter">
+              <option value="all">All</option>
+              <option value="web">Web</option>
+              <option value="database">Database</option>
+              <option value="ai">AI</option>
+            </select>
+
+            <label for="projectSort">Sort projects</label>
+            <select id="projectSort">
+              <option value="default">Default</option>
+              <option value="title-asc">Title (A–Z)</option>
+              <option value="title-desc">Title (Z–A)</option>
+            </select>
+          </div>
+
+          <p id="projectsStatus" class="projects-status" aria-live="polite"></p>
+
+          <div class="projects-grid" id="projectsGrid">
+            <article
+              class="card project"
+              data-category="database"
+              data-title="Database Systems (ICS 321) – SQL"
+            >
+              <img
+                src="assets/images/SQL-Database.png"
+                alt="Preview of SQL database project"
+                loading="lazy"
+              />
+              <div class="project-content">
+                <h3>Database Systems (ICS 321) – SQL</h3>
+                <p class="muted">
+                  Course project focused on designing relational databases and
+                  writing efficient SQL queries.
+                </p>
+                <p class="project-highlight">
+                  Key focus: schema design, data modeling, and query optimization.
+                </p>
+                <div class="tags" aria-label="Tech used">
+                  <span class="tag">SQL</span>
+                  <span class="tag">Relational DB</span>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="card project"
+              data-category="web"
+              data-title="Student Daily Schedule Route Visualizer (SWE316)"
+            >
+              <img
+                src="assets/images/SWE316.png"
+                alt="Preview of student daily schedule route visualizer project"
+                loading="lazy"
+              />
+              <div class="project-content">
+                <h3>Student Daily Schedule Route Visualizer (SWE316)</h3>
+                <p class="muted">
+                  Web application that visualizes optimal routes across campus
+                  based on a student’s daily class schedule.
+                </p>
+                <p class="project-highlight">
+                  Key focus: usability, visualization, and route planning logic.
+                </p>
+                <div class="tags" aria-label="Tech used">
+                  <span class="tag">JavaFX</span>
+                  <span class="tag">UI Design</span>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="card project"
+              data-category="ai"
+              data-title="Artificial Intelligence Classification Project (COE292)"
+            >
+              <img
+                src="assets/images/coe292.png.jpeg"
+                alt="Preview of AI classification project"
+                loading="lazy"
+              />
+              <div class="project-content">
+                <h3>Artificial Intelligence Classification Project (COE292)</h3>
+                <p class="muted">
+                  AI project experimenting with classification algorithms to
+                  analyze and label data.
+                </p>
+                <p class="project-highlight">
+                  Key focus: model experimentation, data analysis, and evaluation.
+                </p>
+                <div class="tags" aria-label="Tech used">
+                  <span class="tag">Python</span>
+                  <span class="tag">Machine Learning</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Contact</h2>
+          </div>
+
+          <form
+            id="contactForm"
+            class="contact-form"
+            action="https://formspree.io/f/xdkwkdza"
+            method="POST"
+            novalidate
+          >
+            <label for="name">Name</label>
+            <input
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Name"
+              autocomplete="name"
+              required
+              aria-describedby="nameError"
+            />
+            <small id="nameError" aria-live="polite"></small>
+
+            <label for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Email"
+              autocomplete="email"
+              required
+              aria-describedby="emailError"
+            />
+            <small id="emailError" aria-live="polite"></small>
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Message"
+              rows="5"
+              required
+              aria-describedby="messageError"
+            ></textarea>
+            <small id="messageError" aria-live="polite"></small>
+
+            <button type="submit" id="submitBtn">Send</button>
+
+            <p id="formStatus" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p id="footerGreeting">Welcome! Thank you for visiting my portfolio.</p>
+        <p>© <span id="year"></span> Lena Alqaissom</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
