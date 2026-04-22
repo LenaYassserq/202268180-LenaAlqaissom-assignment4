@@ -46,10 +46,13 @@
   const projectsGrid = document.getElementById("projectsGrid");
   const projectsStatus = document.getElementById("projectsStatus");
 
+  const themeToggle = document.getElementById("themeToggle");
+
   // =========================
   // Constants
   // =========================
   const USER_NAME_KEY = "portfolio_user_name";
+  const THEME_KEY = "portfolio_theme";
   const DEFAULT_CITY = "Dhahran";
   const WEATHER_TIMEOUT_MS = 6000;
 
@@ -98,6 +101,49 @@
         setTimeout(() => reject(new Error("Request timed out")), timeoutMs)
       ),
     ]);
+  }
+
+  // =========================
+  // Theme Functions
+  // =========================
+  function saveTheme(theme) {
+    try {
+      localStorage.setItem(THEME_KEY, theme);
+    } catch (error) {
+      console.error("Error saving theme:", error);
+    }
+  }
+
+  function getSavedTheme() {
+    try {
+      return localStorage.getItem(THEME_KEY);
+    } catch (error) {
+      console.error("Error getting theme:", error);
+      return null;
+    }
+  }
+
+  function updateThemeToggleLabel(theme) {
+    if (!themeToggle) return;
+    themeToggle.textContent = theme === "dark" ? "☀️ Light" : "🌙 Dark";
+  }
+
+  function applyTheme(theme) {
+    document.documentElement.setAttribute("data-theme", theme);
+    updateThemeToggleLabel(theme);
+  }
+
+  function initTheme() {
+    const savedTheme = getSavedTheme() || "light";
+    applyTheme(savedTheme);
+  }
+
+  function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute("data-theme");
+    const nextTheme = currentTheme === "dark" ? "light" : "dark";
+
+    applyTheme(nextTheme);
+    saveTheme(nextTheme);
   }
 
   // =========================
@@ -698,6 +744,10 @@
       projectSort.addEventListener("change", renderProjects);
     }
 
+    if (themeToggle) {
+      themeToggle.addEventListener("click", toggleTheme);
+    }
+
     window.addEventListener(
       "scroll",
       debounce(() => {
@@ -710,6 +760,7 @@
   // App Initialization
   // =========================
   function init() {
+    initTheme();
     updateFooterYear();
     updateFooterGreeting();
     initEventListeners();

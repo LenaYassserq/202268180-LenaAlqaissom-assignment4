@@ -18,6 +18,21 @@
   --greeting-height: 92px;
 }
 
+:root[data-theme="dark"] {
+  --bg-1: #17121a;
+  --bg-2: #241826;
+  --panel: rgba(31, 24, 35, 0.72);
+  --panel-strong: rgba(43, 33, 48, 0.88);
+  --panel-border: rgba(255, 179, 214, 0.18);
+  --text: #f8ddea;
+  --muted: rgba(248, 221, 234, 0.76);
+  --accent: #ff8fc5;
+  --accent-2: #d98cff;
+  --danger: #ff7b7b;
+  --success: #5fd19d;
+  --shadow: 0 20px 60px rgba(0, 0, 0, 0.38);
+}
+
 *,
 *::before,
 *::after {
@@ -35,6 +50,13 @@ body {
   background:
     radial-gradient(900px 420px at 10% 10%, rgba(255, 255, 255, 0.45), transparent 60%),
     radial-gradient(800px 380px at 90% 0%, rgba(255, 191, 223, 0.45), transparent 55%),
+    linear-gradient(135deg, var(--bg-1), var(--bg-2));
+}
+
+:root[data-theme="dark"] body {
+  background:
+    radial-gradient(900px 420px at 10% 10%, rgba(255, 255, 255, 0.05), transparent 60%),
+    radial-gradient(800px 380px at 90% 0%, rgba(217, 140, 255, 0.08), transparent 55%),
     linear-gradient(135deg, var(--bg-1), var(--bg-2));
 }
 
@@ -118,6 +140,10 @@ select {
   border-bottom: 1px solid var(--panel-border);
 }
 
+:root[data-theme="dark"] .site-header {
+  background: rgba(24, 18, 28, 0.85);
+}
+
 .header-inner {
   min-height: var(--header-height);
   display: flex;
@@ -165,6 +191,20 @@ select {
 .nav a:focus-visible::after,
 .nav a.active::after {
   width: 100%;
+}
+
+#themeToggle {
+  min-height: 44px;
+  padding: 0 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.75);
+  color: var(--text);
+  border: 1px solid var(--panel-border);
+  box-shadow: none;
+}
+
+:root[data-theme="dark"] #themeToggle {
+  background: rgba(255, 255, 255, 0.1);
 }
 
 /* HERO */
@@ -273,6 +313,10 @@ select {
   opacity: 0;
   transform: translateY(-12px);
   transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+:root[data-theme="dark"] .greeting-bar {
+  background: rgba(24, 18, 28, 0.92);
 }
 
 .greeting-bar.show {
@@ -616,6 +660,12 @@ select {
   background: rgba(255, 255, 255, 0.92);
   color: var(--text);
   outline: none;
+}
+
+:root[data-theme="dark"] input,
+:root[data-theme="dark"] textarea,
+:root[data-theme="dark"] select {
+  background: rgba(255, 255, 255, 0.06);
 }
 
 textarea {
