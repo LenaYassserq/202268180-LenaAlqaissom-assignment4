@@ -87,6 +87,8 @@ Assignment 4 focused on improving the project by adding:
 
 # Folder Structure
 
+# Folder Structure
+
 ```text
 Assignment-4/
 ├── index.html
@@ -99,8 +101,13 @@ Assignment-4/
 ├── docs/
 │   ├── ai-usage-report.md
 │   └── technical-documentation.md
+├── presentation/
+│   ├── slides.pdf
+│   └── demo-video.mp4
 └── README.md
 ```
+
+
 ## How to Run the Project
 
 ### Requirements
@@ -175,3 +182,6 @@ This project demonstrates strong skills in:
 - JavaScript interactivity  
 - Feature enhancement and scalability
   
+
+
+
