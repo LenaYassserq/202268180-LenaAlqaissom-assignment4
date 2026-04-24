@@ -61,15 +61,23 @@ Assignment 4 focused on improving the project by adding:
 ---
 
 ### 3. Project Filtering & Sorting
-- Filter by category (Web, Database, AI)
+- Filter by category:
+  - Web  
+  - Database  
+  - AI  
+
 - Sort projects alphabetically
 
 ---
 
 ### 4. Contact Form
-- Validates user input
+- Validates:
+  - Name  
+  - Email  
+  - Message  
+
 - Sends messages using **Formspree**
-- Displays success/error feedback
+- Displays success and error feedback
 
 ---
 
@@ -84,7 +92,6 @@ Assignment 4 focused on improving the project by adding:
 - Displays greeting based on time of day
 
 ---
-
 
 # Folder Structure
 
@@ -105,44 +112,40 @@ Assignment-4/
 │   └── demo-video.mp4
 └── README.md
 ```
+# How to Run the Project
 
-
-
-## How to Run the Project
-
-### Requirements
+## Requirements
 
 - Modern browser (Chrome, Edge, Firefox, Safari)
 - Internet connection (for weather API + form submission)
 
-### Steps
+## Steps
 
-1. Download or clone the project  
-2. Open `index.html` in your browser  
+1. Download or clone the project.
+2. Open `index.html` in your browser.
 3. Interact with:
-
-- Dark mode toggle  
-- Greeting bar  
-- Projects section  
-- Contact form  
+   - Dark mode toggle
+   - Greeting bar
+   - Projects section
+   - Contact form
 
 No installation required.
 
 ---
 
-## Technologies Used
+# Technologies Used
 
-- HTML5  
-- CSS3 (with CSS Variables)  
-- JavaScript (ES6+)  
-- LocalStorage  
-- Browser Geolocation API  
-- GoWeather API  
-- Formspree  
+- HTML5
+- CSS3 (with CSS Variables)
+- JavaScript (ES6+)
+- LocalStorage
+- Browser Geolocation API
+- GoWeather API
+- Formspree
 
 ---
 
-## Contact Form Endpoint
+# Contact Form Endpoint
 
 The contact form is connected to:
 
@@ -150,35 +153,40 @@ https://formspree.io/f/mdaypvoy
 
 ---
 
-## AI Usage
+# AI Usage
 
 AI tools were used responsibly to:
 
-- Assist in implementing dark mode logic  
-- Improve UI/UX design decisions  
-- Refine JavaScript functionality  
-- Help structure and document the project  
+- Assist in implementing dark mode logic
+- Improve UI/UX design decisions
+- Refine JavaScript functionality
+- Help structure and document the project
 
 ---
 
-## Live Demo
+# Live Demo
 
 https://lenayassserq.github.io/202268180-LenaAlqaissom-assignment4/
 
-
 ---
 
-## Conclusion
+# Conclusion
 
 Assignment 4 enhances the portfolio by introducing:
 
-- User-controlled theme switching  
-- Improved design system  
-- Better user experience  
+- User-controlled theme switching
+- Improved design system
+- Better user experience
 
 This project demonstrates strong skills in:
 
-- Front-end development  
-- JavaScript interactivity  
-- - UI/UX design
+- Front-end development
+- JavaScript interactivity
+- UI/UX design
 - Feature enhancement and scalability
+
+For full details, see:
+
+[docs/ai-usage-report.md](docs/ai-usage-report.md)
+
+
