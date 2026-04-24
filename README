@@ -33,7 +33,7 @@ Assignment 4 focused on improving the project by adding:
 - Enhanced visual design consistency
 - Smooth transitions between themes
 - Better color contrast for accessibility
-- Reusable CSS variable system :contentReference[oaicite:1]{index=1}
+- Reusable CSS variable system
 
 ---
 
@@ -104,17 +104,20 @@ Assignment-4/
 ## How to Run the Project
 
 ### Requirements
-- Modern browser (Chrome, Edge, Firefox, Safari)  
-- Internet connection (for weather API + form submission)  
+
+- Modern browser (Chrome, Edge, Firefox, Safari)
+- Internet connection (for weather API + form submission)
 
 ### Steps
+
 1. Download or clone the project  
 2. Open `index.html` in your browser  
 3. Interact with:
-   - Dark mode toggle  
-   - Greeting bar  
-   - Projects section  
-   - Contact form  
+
+- Dark mode toggle  
+- Greeting bar  
+- Projects section  
+- Contact form  
 
 No installation required.
 
@@ -129,18 +132,21 @@ No installation required.
 - Browser Geolocation API  
 - GoWeather API  
 - Formspree  
- 
- ##  Contact Form Endpoint
+
+---
+
+## Contact Form Endpoint
 
 The contact form is connected to:
-https://formspree.io/f/mdaypvoy
 
+https://formspree.io/f/mdaypvoy
 
 ---
 
 ## AI Usage
 
 AI tools were used responsibly to:
+
 - Assist in implementing dark mode logic  
 - Improve UI/UX design decisions  
 - Refine JavaScript functionality  
@@ -148,22 +154,24 @@ AI tools were used responsibly to:
 
 ---
 
-##  Live Demo
+## Live Demo
 
 https://lenayassserq.github.io/202268180-LenaAlqaissom-assignment4/
+
 
 ---
 
 ## Conclusion
 
 Assignment 4 enhances the portfolio by introducing:
+
 - User-controlled theme switching  
 - Improved design system  
 - Better user experience  
 
 This project demonstrates strong skills in:
+
 - Front-end development  
 - JavaScript interactivity  
-- UI/UX design  
-- Feature enhancement and scalability  
+- Feature enhancement and scalability
   
