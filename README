@@ -93,6 +93,7 @@ Assignment 4 focused on improving the project by adding:
 
 ---
 
+
 # Folder Structure
 
 ```text
@@ -112,7 +113,14 @@ Assignment 4 focused on improving the project by adding:
 │   └── demo-video.mp4
 └── README.md
 ```
+<<<<<<< HEAD
 # How to Run the Project
+=======
+
+
+
+## How to Run the Project
+>>>>>>> e1af07a (R)
 
 ## Requirements
 
@@ -188,5 +196,3 @@ This project demonstrates strong skills in:
 For full details, see:
 
 [docs/ai-usage-report.md](docs/ai-usage-report.md)
-
-
