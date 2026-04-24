@@ -93,7 +93,6 @@ Assignment 4 focused on improving the project by adding:
 
 ---
 
-
 # Folder Structure
 
 ```text
@@ -114,6 +113,7 @@ Assignment 4 focused on improving the project by adding:
 └── README.md
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 # How to Run the Project
 =======
 
@@ -122,6 +122,10 @@ Assignment 4 focused on improving the project by adding:
 ## How to Run the Project
 >>>>>>> e1af07a (R)
 
+=======
+# How to Run the Project
+
+>>>>>>> 09af4ff (r)
 ## Requirements
 
 - Modern browser (Chrome, Edge, Firefox, Safari)
