@@ -4,7 +4,7 @@
 
 ### Description
 
-This project is the enhanced final version of my personal portfolio website, developed for Assignment 4.  
+This project is the enhanced final version of my personal portfolio website, developed for Assignment 4.
 
 It builds upon Assignment 3 by adding Dark Mode functionality, improved UI/UX design, better styling using CSS variables, user customization features, and a more polished professional presentation.
 
@@ -14,16 +14,20 @@ The website is designed as a responsive and interactive portfolio that showcases
 
 ## Technologies Used
 
-- **HTML5** – Semantic structure and accessibility support  
-- **CSS3** – Responsive design, layout improvements, transitions, and CSS variables  
-- **JavaScript (ES6+)** – DOM manipulation, event handling, LocalStorage, and dynamic UI updates  
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- LocalStorage
+- Browser Geolocation API
+- GoWeather API
+- Formspree
 
 ### External Tools & APIs
 
-- GoWeather API  
-- Browser Geolocation API  
-- Formspree  
-- LocalStorage  
+- GoWeather API
+- Browser Geolocation API
+- Formspree
+- LocalStorage
 
 ---
 
@@ -31,20 +35,20 @@ The website is designed as a responsive and interactive portfolio that showcases
 
 Assignment 4 required improving the previous portfolio project into a more polished and professional web application by demonstrating:
 
-- Dark Mode implementation  
-- stronger UI/UX consistency  
-- improved responsiveness and accessibility  
-- persistent user customization  
-- clean project organization and documentation  
-- presentation-ready professional quality  
-- responsible AI usage transparency  
+- Dark Mode implementation
+- Stronger UI/UX consistency
+- Improved responsiveness and accessibility
+- Persistent user customization
+- Clean project organization and documentation
+- Presentation-ready professional quality
+- Responsible AI usage transparency
 
 ---
 
 ## Project Structure
 
 ```text
-2268180-LenaAlqaissom-assignment4/
+202268180-LenaAlqaissom-assignment4/
 ├── index.html
 ├── css/
 │   └── styles.css
@@ -72,20 +76,20 @@ Uses semantic layout with:
 
 ### Main Sections
 
-1. Greeting Bar
-2. Hero Section
-3. About Section
-4. Skills Section
-5. Projects Section
-6. Contact Form
-7. Footer
+1. Greeting Bar  
+2. Hero Section  
+3. About Section  
+4. Skills Section  
+5. Projects Section  
+6. Contact Form  
+7. Footer  
 
 ### Assignment 4 Additions
 
-- Dark Mode toggle button
-- Improved navigation bar structure
-- Better section spacing and layout consistency
-- Updated presentation-ready UI improvements
+- Dark Mode toggle button  
+- Improved navigation bar structure  
+- Better section spacing and layout consistency  
+- Updated presentation-ready UI improvements  
 
 ---
 
@@ -93,25 +97,25 @@ Uses semantic layout with:
 
 ### Styling Approach
 
-- Uses CSS variables (`:root`) for theme management
-- Light Mode and Dark Mode controlled using variables
-- Responsive layout using Flexbox and Grid
-- Reusable styling system for consistency
+- Uses CSS variables (`:root`) for theme management  
+- Light Mode and Dark Mode controlled using variables  
+- Responsive layout using Flexbox and Grid  
+- Reusable styling system for consistency  
 
 ### Key Components
 
-- Dark Mode styling system
-- Navigation bar improvements
-- Project cards and section spacing
-- Contact form styling
-- Improved transitions and animations
+- Dark Mode styling system  
+- Navigation bar improvements  
+- Project cards and section spacing  
+- Contact form styling  
+- Improved transitions and animations  
 
 ### Accessibility
 
-- Better color contrast
-- Improved focus states
-- Responsive layout for all devices
-- Cleaner visual hierarchy for readability
+- Better color contrast  
+- Improved focus states  
+- Responsive layout for all devices  
+- Cleaner visual hierarchy for readability  
 
 ---
 
@@ -119,51 +123,51 @@ Uses semantic layout with:
 
 ### 1. Dark Mode Toggle
 
-- Users can switch between Light Mode and Dark Mode
-- Theme preference is saved using LocalStorage
-- Saved theme automatically applies on page reload
+- Users can switch between Light Mode and Dark Mode  
+- Theme preference is saved using LocalStorage  
+- Saved theme automatically applies on page reload  
 
 ### 2. Greeting Bar
 
-- Stores user name using LocalStorage
-- Displays personalized greeting
-- Allows editing saved user name
+- Stores user name using LocalStorage  
+- Displays personalized greeting  
+- Allows editing saved user name  
 
 ### 3. Weather Widget
 
-- Uses browser geolocation to detect location
-- Fetches weather data using GoWeather API
-- Includes loading state and error handling
+- Uses browser geolocation to detect location  
+- Fetches weather data using GoWeather API  
+- Includes loading state and error handling  
 
 ### 4. Project Filtering and Sorting
 
-- Filters projects by category
-- Sorts projects alphabetically
-- Dynamically updates project display
+- Filters projects by category  
+- Sorts projects alphabetically  
+- Dynamically updates project display  
 
 ### 5. Contact Form
 
 Validates:
 
-- Name
-- Email
-- Message
+- Name  
+- Email  
+- Message  
 
 Also:
 
-- Submits form asynchronously using Formspree
-- Displays success and error feedback
+- Submits form asynchronously using Formspree  
+- Displays success and error feedback  
 
 ### 6. Scroll-Based Features
 
-- Smooth scrolling between sections
-- Active navigation highlighting
-- Animated project and skill cards
+- Smooth scrolling between sections  
+- Active navigation highlighting  
+- Animated project and skill cards  
 
 ### 7. Footer Enhancements
 
-- Dynamic current year
-- Time-based greeting message
+- Dynamic current year  
+- Time-based greeting message  
 
 ---
 
@@ -171,11 +175,11 @@ Also:
 
 ### Key Improvements
 
-- Cleaner CSS structure using reusable variables
-- Improved responsive behavior across devices
-- Reduced unused styling and code clutter
-- Better performance through lightweight transitions
-- More maintainable and scalable project structure
+- Cleaner CSS structure using reusable variables  
+- Improved responsive behavior across devices  
+- Reduced unused styling and code clutter  
+- Better performance through lightweight transitions  
+- More maintainable and scalable project structure  
 
 ---
 
